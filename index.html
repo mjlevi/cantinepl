@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MENI</title>
+	<link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/paris-french-cantine.jpg"/>
+
+</head>
+<body>
+	<header>
+		<h1>MENI</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Accueil</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#chefs">Les chefs</a></li>
+				<li><a href="#a-propos">À propos</a></li>
+			</ul>
+		</nav>
+	</header>
+    <div class="row">
+        <div class="column-left">
+          <img src="/images/Bon-Appetit.png" alt="Image">
+        </div>
+        <div class="column-right">
+          <h1>Cantine de Paul Eluard</h1>
+          <p>Bienvenu, Vous devenez selectiioner les plats que vous avez pris puis voter en scannant le QR code place sur les plateaux </p>
+        </div>
+      </div>
+  <main>
+    <main>
+      <script src="https://unpkg.com/quagga"></script>
+      <section id="menu">
+          <h2>Menu</h2>
+          <p>Choisissez vos plats :</p>
+          <form action="vote_resultats.php" method="post">
+              <ul>
+                  <li>
+                      <h3>Plats chauds</h3>
+                      <ul>
+                          <li>
+                              <input type="radio" id="plat1" name="platchaud" value="Riz Poulet">
+                              <label for="plat1">
+                                  <img src="images/rizaupoulet-1000x500.jpg" alt="Riz Poulet">
+                              </label>
+                              <div class="rating">
+                                <input type="checkbox" id="star5" name="rating" value="5">
+                                <label for="star5"></label>
+                                <input type="checkbox" id="star4" name="rating" value="4">
+                                <label for="star4"></label>
+                                <input type="checkbox" id="star3" name="rating" value="3">
+                                <label for="star3"></label>
+                                <input type="checkbox" id="star2" name="rating" value="2">
+                                <label for="star2"></label>
+                                <input type="checkbox" id="star1" name="rating" value="1">
+                                <label for="star1"></label>
+                              </div>                           
+                          </li>
+                          <li>
+                              <input type="radio" id="plat2" name="platchaud" value="Riz Poisson">
+                              <label for="plat2">
+                                  <img src="images/rizpoisson.jpg" alt="Riz Poisson">
+                              </label>
+                              <div class="rating">
+                                <input type="checkbox" id="star6" name="rating" value="5">
+                                <label for="star6"></label>
+                                <input type="checkbox" id="star7" name="rating" value="4">
+                                <label for="star7"></label>
+                                <input type="checkbox" id="star8" name="rating" value="3">
+                                <label for="star8"></label>
+                                <input type="checkbox" id="star9" name="rating" value="2">
+                                <label for="star9"></label>
+                                <input type="checkbox" id="star10" name="rating" value="1">
+                                <label for="star10"></label>
+                              </div>                             
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h3>Plats froids</h3>
+                            <ul>
+                              <li>
+                                <input type="radio" id="plat3" name="platfroid" value="Salade">
+                                <label for="plat3">
+                                  <img src="images/salade.webp" alt="Salade">
+                                </label>
+                                <div class="rating">
+                                  <input type="checkbox" id="star11" name="rating" value="5">
+                                  <label for="star11"></label>
+                                  <input type="checkbox" id="star12" name="rating" value="4">
+                                  <label for="star12"></label>
+                                  <input type="checkbox" id="star13" name="rating" value="3">
+                                  <label for="star13"></label>
+                                  <input type="checkbox" id="star14" name="rating" value="2">
+                                  <label for="star14"></label>
+                                  <input type="checkbox" id="star15" name="rating" value="1">
+                                  <label for="star15"></label>
+                                </div>                                                                                     
+                              </li>
+                              <li>
+                                <input type="radio" id="plat4" name="platfroid" value="radis">
+                                <label for="plat4">
+                                  <img src="images/radis.webp" alt="radis">
+                                </label>
+                                <div class="rating">
+                                  <input type="checkbox" id="star16" name="rating" value="5">
+                                  <label for="star16"></label>
+                                  <input type="checkbox" id="star17" name="rating" value="4">
+                                  <label for="star17"></label>
+                                  <input type="checkbox" id="star18" name="rating" value="3">
+                                  <label for="star18"></label>
+                                  <input type="checkbox" id="star19" name="rating" value="2">
+                                  <label for="star19"></label>
+                                  <input type="checkbox" id="star20" name="rating" value="1">
+                                  <label for="star20"></label>
+                                </div>                                               
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h3>Produits laitiers</h3>
+                            <ul>
+                              <li>
+                                <input type="radio" id="plat5" name="produitlaitier" value="Fromage">
+                                <label for="plat5">
+                                  <img src="images/OIP.jfif" alt="Fromage">
+                                </label>
+                                <div class="rating">
+                                  <input type="checkbox" id="star21" name="rating" value="5">
+                                  <label for="star21"></label>
+                                  <input type="checkbox" id="star22" name="rating" value="4">
+                                  <label for="star22"></label>
+                                  <input type="checkbox" id="star13" name="rating" value="3">
+                                  <label for="star23"></label>
+                                  <input type="checkbox" id="star24" name="rating" value="2">
+                                  <label for="star24"></label>
+                                  <input type="checkbox" id="star25" name="rating" value="1">
+                                  <label for="star25"></label>
+                                </div>                                               
+                              </li>
+                              <li>
+                                <input type="radio" id="plat6" name="produitlaitier" value="Yaourt">
+                                <label for="plat6">
+                                  <img src="images/yaourt.webp" alt="Yaourt">
+                                </label>
+                                <div class="rating">
+                                  <input type="checkbox" id="star26" name="rating" value="5">
+                                  <label for="star26"></label>
+                                  <input type="checkbox" id="star27" name="rating" value="4">
+                                  <label for="star27"></label>
+                                  <input type="checkbox" id="star28" name="rating" value="3">
+                                  <label for="star28"></label>
+                                  <input type="checkbox" id="star29" name="rating" value="2">
+                                  <label for="star29"></label>
+                                  <input type="checkbox" id="star30" name="rating" value="1">
+                                  <label for="star30"></label>
+                                </div>                                               
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h3>Desserts</h3>
+                            <ul>
+                              <li>
+                                <input type="radio" id="plat7" name="dessert" value="eclairs-au-chocolat">
+                                <label for="plat7">
+                                  <img src="images/eclairs-au-chocolat.jpg" alt="eclairs au chocolat">
+                                </label>
+                                <div class="rating">
+                                  <input type="checkbox" id="star31" name="rating" value="5">
+                                  <label for="star31"></label>
+                                  <input type="checkbox" id="star32" name="rating" value="4">
+                                  <label for="star32"></label>
+                                  <input type="checkbox" id="star33" name="rating" value="3">
+                                  <label for="star33"></label>
+                                  <input type="checkbox" id="star34" name="rating" value="2">
+                                  <label for="star34"></label>
+                                  <input type="checkbox" id="star35" name="rating" value="1">
+                                  <label for="star35"></label>
+                                </div>                                              
+                              </li>
+                              <li>
+                                <input type="radio" id="plat8" name="dessert" value="salade de fruits">
+                                <label for="plat8">
+                                  <img src="images/salade de fruits.jpg" alt="salade de fruits">
+                                </label>
+                                <div class="rating">
+                                  <input type="checkbox" id="star36" name="rating" value="5">
+                                  <label for="star36"></label>
+                                  <input type="checkbox" id="star37" name="rating" value="4">
+                                  <label for="star37"></label>
+                                  <input type="checkbox" id="star38" name="rating" value="3">
+                                  <label for="star38"></label>
+                                  <input type="checkbox" id="star39" name="rating" value="2">
+                                  <label for="star39"></label>
+                                  <input type="checkbox" id="star40" name="rating" value="1">
+                                  <label for="star40"></label>
+                                </div>                                              
+                                </li>              
+                            </ul>
+                          </li>
+                        </ul>
+                      </form>
+                      <!-- Ajouter un bouton pour lancer le scan QR -->
+                      <button onclick="scanQR()">Voter</button>
+ <!-- Afficher la vidéo de scan -->
+<div id="scanner"></div>
+
+<script>
+	function scanQR() {
+		// Configurer le scanner avec les options souhaitées
+		Quagga.init({
+			inputStream : {
+				name : "Live",
+				type : "LiveStream",
+				target: document.querySelector('#scanner')
+			},
+			decoder : {
+				readers : ["code_128_reader"]
+			}
+		}, function(err) {
+			if (err) {
+				console.log(err);
+				return
+			}
+			// Démarrer le scan
+			Quagga.start();
+		});
+
+		// Écouter l'événement "detected" lorsqu'un code QR est détecté
+		Quagga.onDetected(function(result) {
+			// Vérifier si le contenu du QR code correspond au code que vous avez créé
+			if (result.codeResult.code === "https://chart.googleapis.com/chart?cht=qr&chl=code%20de%20verif&chs=180x180&choe=UTF-8&chld=L|2") {
+				// Arrêter le scan
+				Quagga.stop();
+				// Récupérer les plats sélectionnés
+				var platsSelectionnes = document.querySelectorAll('input[type="checkbox"]:checked');
+				var plats = [];
+				for (var i = 0; i < platsSelectionnes.length; i++) {
+					plats.push(platsSelectionnes[i].value);
+				}
+				// Encoder les plats sélectionnés dans l'URL
+				var url = "page_resultat.html?plats=" + encodeURIComponent(JSON.stringify(plats));
+				// Rediriger vers la page de résultat
+				window.location.href = url;
+			} else {
+				// Afficher un message d'erreur si le QR code n'est pas valide
+				alert("QR code invalide");
+			}
+		});
+	}
+</script> 
+<section id="chefs">
+<section class="artists">
+  <dev class="heading">
+      <h2> Les Chefs </h2>
+      <P>
+          Voici nos cuisiniers
+      </P>
+  </dev>
+<div class="cards">
+      <div class="card">
+          <img src="images/smoke2.jpg" class="bg-img"/>
+          <img src="images/user1.png" class="profile-img"/>
+          <h3> Mohanathas</h3>
+      <p>
+         La misère est si belle...
+      </p>
+      </div>
+  
+      <div class="card">
+          <img src="images/smoke1.jpg" class="bg-img"/>
+          <img src="images/pngtree-female-teachers-of-cartoon-teaching-png-image_939540 - Copie (2).jpg"  class="profile-img"/>
+          <h3> Elhabib</h3>
+      <p>
+        J'aime pas les menteurs.
+      </p>
+      </div>
+  <div class="card">
+      <img src="images/smoke3.jpg" class="bg-img"/>
+      <img src="images/Mon projet (1).jpg"  class="profile-img"/>
+      <h3> Nizar</h3>
+  <p>
+    Nique la douche , vive valo
+  </p>
+  </div>
+  <div class="card">
+      <img src="images/smoke4.jpg" class="bg-img"/>
+      <img src="images/Al.webp"  class="profile-img"/>
+      <h3> Issam </h3>
+  <p>
+      Algerie est mieux que le Maroc    
+  </p>
+  </div>
+  </div>
+</section>
+
+  <section id="a-propos">
+      <h2>À propos</h2>
+      <p>Votez pour les plats de la cantine est un site créé par la société MENI pour permettre aux usagers de la cantine de donner leur avis sur les plats proposés. Suivez-nous sur les réseaux sociaux pour être informé des nouveautés :</p>
+      <ul>
+          <li><a href="http://www.lyceepauleluard.fr/site/">🏫Lycée Paul Eluard</a></li>
+          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">📷Instagram</a></li>
+          <li><a href="https://resto-scolaire.fr/lyceepauleluard">🍕Restauration Scolaire</a></li>
+      </ul>
+  </section>
+<footer>
+  <p>© 2023 Votez pour les plats de la cantine.</p>
+</footer>
