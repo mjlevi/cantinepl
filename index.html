@@ -202,11 +202,12 @@
                           </li>
                         </ul>
                       </form>
-                      <!-- Ajouter un bouton pour lancer le scan QR -->
-                      <button onclick="scanQR()">Voter</button>
- <!-- Afficher la vidéo de scan -->
+                     <!-- Ajouter un bouton pour lancer le scan QR -->
+<button onclick="scanQR()">Voter</button>
+<!-- Afficher la vidéo de scan -->
 <div id="scanner"></div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
 <script>
 	function scanQR() {
 		// Configurer le scanner avec les options souhaitées
@@ -214,7 +215,10 @@
 			inputStream : {
 				name : "Live",
 				type : "LiveStream",
-				target: document.querySelector('#scanner')
+				target: document.querySelector('#scanner'),
+				constraints: {
+					facingMode: "environment" // Utilise la caméra arrière pour le scan
+				}
 			},
 			decoder : {
 				readers : ["code_128_reader"]
@@ -222,7 +226,7 @@
 		}, function(err) {
 			if (err) {
 				console.log(err);
-				return
+				return;
 			}
 			// Démarrer le scan
 			Quagga.start();
@@ -250,7 +254,8 @@
 			}
 		});
 	}
-</script> 
+</script>
+
 <section id="chefs">
 <section class="artists">
   <dev class="heading">
